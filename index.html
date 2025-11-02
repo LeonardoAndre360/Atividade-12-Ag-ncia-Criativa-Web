@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Criativa Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">Agência Criativa Web</div>
+        <nav class="header__nav">
+            <ul class="menu">
+                <li class="menu__item"><a href="#home">Home</a></li>
+                <li class="menu__item"><a href="#sobre">Sobre Nós</a></li>
+                <li class="menu__item"><a href="#servicos">Serviços</a></li>
+                <li class="menu__item"><a href="#depoimentos">Depoimentos</a></li>
+                <li class="menu__item"><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1 class="hero__title">Bem-vindo à Agência Criativa Web</h1>
+        <p class="hero__text">Onde inovação e criatividade se encontram para transformar ideias em realidade digital.</p>
+    </section>
+
+    <section id="sobre" class="section about">
+        <h2 class="section__title">Sobre Nós</h2>
+        <p class="section__text">Somos uma agência de design digital dedicada a criar experiências web incríveis. Nossos valores incluem inovação, qualidade e satisfação do cliente.</p>
+    </section>
+
+    <section id="servicos" class="section services">
+        <h2 class="section__title">Serviços</h2>
+        <div class="services__grid">
+            <div class="services__item">Design Gráfico</div>
+            <div class="services__item">Desenvolvimento Web</div>
+            <div class="services__item">Branding</div>
+            <div class="services__item">Marketing Digital</div>
+            <div class="services__item">UI/UX Design</div>
+            <div class="services__item">Consultoria Digital</div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="section testimonials">
+        <h2 class="section__title">Depoimentos</h2>
+        <div class="testimonials__list">
+            <div class="testimonials__item">
+                <p class="testimonials__text">"Excelente trabalho! Recomendo a todos."</p>
+                <cite class="testimonials__cite">- Wesley</cite>
+            </div>
+            <div class="testimonials__item">
+                <p class="testimonials__text">"Profissionais competentes e criativos."</p>
+                <cite class="testimonials__cite">- Fabiano</cite>
+            </div>
+            <div class="testimonials__item">
+                <p class="testimonials__text">"Transformaram nossa visão em um site incrível."</p>
+                <cite class="testimonials__cite">- Carla André/cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section contact">
+        <h2 class="section__title">Contato</h2>
+        <p class="contact__info">Endereço: Rua Fictícia, 123 - Cidade, Estado</p>
+        <p class="contact__info">Telefone: (00) 1234-5678</p>
+        <p class="contact__info">E-mail: contato@agenciacriativaweb.com</p>
+        <form class="contact__form">
+            <label class="contact__label" for="nome">Nome:</label>
+            <input class="contact__input" type="text" id="nome" name="nome" required>
+            
+            <label class="contact__label" for="email">E-mail:</label>
+            <input class="contact__input" type="email" id="email" name="email" required>
+            
+            <label class="contact__label" for="mensagem">Mensagem:</label>
+            <textarea class="contact__input contact__input--textarea" id="mensagem" name="mensagem" required></textarea>
+            
+            <button class="contact__button" type="submit">Enviar</button>
+        </form>
+    </section>
+
+</body>
+</html>

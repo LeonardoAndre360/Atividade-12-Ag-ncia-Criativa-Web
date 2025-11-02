@@ -1,0 +1,207 @@
+/* Reset e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    font-size: 1rem;
+}
+
+/* Componentes reutilizáveis */
+.section {
+    padding: 5vh 5vw;
+    margin: 2vh 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.1);
+}
+
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section__text {
+    max-width: 80ch;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5vw;
+    background-color: #007bff;
+    color: white;
+}
+
+.header__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header__nav .menu {
+    display: flex;
+    list-style: none;
+}
+
+.header__nav .menu__item {
+    margin-left: 2rem;
+}
+
+.header__nav .menu__item a {
+    color: white;
+    text-decoration: none;
+}
+
+.header__nav .menu__item a:hover {
+    text-decoration: underline;
+}
+
+/* Hero (antigo banner) */
+.hero {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 0 10vw;
+}
+
+.hero__title {
+    font-size: 3vw;
+}
+
+.hero__text {
+    font-size: 1.5vw;
+}
+
+/* Services */
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+}
+
+.services__item {
+    background-color: #e9ecef;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+/* Testimonials */
+.testimonials__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.testimonials__item {
+    flex: 1 1 30%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #e9ecef;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.testimonials__cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Contact */
+.contact__info {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.contact__form {
+    max-width: 50rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__label {
+    margin-top: 1rem;
+}
+
+.contact__input {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.contact__input--textarea {
+    resize: vertical;
+}
+
+.contact__button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.contact__button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header__nav .menu {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .header__nav .menu__item {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero__title {
+        font-size: 6vw;
+    }
+
+    .hero__text {
+        font-size: 4vw;
+    }
+
+    .testimonials__item {
+        flex: 1 1 100%;
+    }
+
+    .services__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Imagens responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
