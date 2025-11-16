@@ -1,0 +1,39 @@
+@use 'variaveis';
+@use 'mixins';
+@use 'base';
+@use 'layout';
+@use 'componentes';
+
+//Media Queries (adicionadas no arquivo principal para visão geral)
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+}
+
+.menu {
+    flex-direction: column;
+    margin-top: variaveis.$spacing-base;
+
+    &__item {
+        margin-left: 0;
+        margin-bottom: variaveis.$spacing-small;
+    }
+}
+
+.hero__title {
+    font-size: 6vw;
+}
+
+.hero__text {
+    font-size: 4vw;
+}
+
+.testimonials__item {
+    flex: 1 1 100%;
+}
+
+.services__grid {
+    grid-template-columns: 1fr;
+}

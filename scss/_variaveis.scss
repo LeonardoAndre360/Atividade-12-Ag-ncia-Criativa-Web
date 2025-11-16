@@ -1,0 +1,21 @@
+$primary-color: #007bff;
+$primary-dark: darken($primary-color, 10%);
+$secondary-color: #e9ecef;
+$text-color: #333;
+$bg-color: #f4f4f4;
+$white: white;
+$border-color: #ccc;
+
+$font-family: 'Arial', sans-serif;
+$font-size-base: 1rem;
+$font-size-title: 2rem;
+$font-size-large: 1.5rem;
+
+$spacing-base: 1rem;
+$spacing-small: $spacing-base / 2;
+$spacing-large: $spacing-base * 2;
+
+$border-radius-small: 0.25rem;
+$border-radius-medium: 0.5rem;
+
+$shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.1)

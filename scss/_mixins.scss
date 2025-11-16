@@ -1,0 +1,23 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button-basic {
+    padding: 0.75rem;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: $border-radius-small;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-dark;
+    }
+}
+
+@mixin spacing($margin: $spacing-base, $padding: $spacing-base) {
+    margin: $margin;
+    padding: $padding;
+}

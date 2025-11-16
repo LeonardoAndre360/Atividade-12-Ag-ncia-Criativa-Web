@@ -1,0 +1,50 @@
+.section {
+    padding: 5vh 5vw;
+    margin: 2vh 0;
+    background-color:  $white;
+    border-radius: $border-radius-medium;
+    box-shadow: $shadow;
+}
+
+.section__title {
+    font-size: $font-size-title;
+    margin-bottom: $spacing-base;
+    text-align: center;
+}
+
+.section__text {
+    max-width: 80ch;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    @include flex-center;
+    justify-content: space-between;
+    padding: $spacing-base 5vw;
+    background-color: $primary-color;
+    color: $white;
+}
+
+.header__logo {
+    font-size: $font-size-large;
+    font-weight: bold;
+}
+
+.hero {
+    height: 50vh;
+    @include flex-center;
+    flex-direction: column;
+    background-color: $primary-color;
+    color: $white;
+    text-align: center;
+    padding: 0 10vw;
+}
+
+.hero__title {
+    font-size: 3vw;
+}
+
+.hero__text {
+    font-size: 1.5vw;
+}
